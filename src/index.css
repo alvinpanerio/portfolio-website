@@ -22,12 +22,12 @@
 }
 
 .bg-noise-white {
-  background-image: url(/public/images/noise-white.png);
+  background-image: url(/src/assets/noise-white.png);
   background-size: contain;
 }
 
 .bg-noise-black {
-  background-image: url(/public/images/noise-black.png);
+  background-image: url(/src/assets/noise-black.png);
   background-size: auto;
 }
 

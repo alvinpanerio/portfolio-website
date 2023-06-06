@@ -1,4 +1,35 @@
 <script>
+import sb from "@/assets/projects/sb.png";
+import luna from "@/assets/projects/luna.png";
+import eg from "@/assets/projects/eg.png";
+import lca from "@/assets/projects/lca.png";
+import wyw from "@/assets/projects/wyw.png";
+import ss from "@/assets/projects/ss.jpg";
+import rtd from "@/assets/projects/rtd.jpg";
+
+import revolver from "@/assets/projects/secondary/revolver.jpg";
+import donut from "@/assets/projects/secondary/donut.jpg";
+import tank from "@/assets/projects/secondary/tank.png";
+import poster from "@/assets/projects/secondary/poster.jpg";
+import paulwitda45 from "@/assets/projects/secondary/paul-wit-da-45.jpg";
+import unplanned from "@/assets/projects/secondary/unplanned.jpg";
+import screamin from "@/assets/projects/secondary/screamin.jpg";
+import facebook from "@/assets/projects/secondary/facebook.png";
+import ukiyo from "@/assets/projects/secondary/ukiyo.png";
+
+import reactjs from "@/assets/stacks/reactjs.svg";
+import nodejs from "@/assets/stacks/nodejs.svg";
+import mongodb from "@/assets/stacks/mongodb.svg";
+import firebase from "@/assets/stacks/firebase.svg";
+import bootstrap from "@/assets/stacks/bootstrap.svg";
+import tailwind from "@/assets/stacks/tailwind.svg";
+import sass from "@/assets/stacks/sass.svg";
+import jquery from "@/assets/stacks/jquery.svg";
+import git from "@/assets/stacks/git.svg";
+import figma from "@/assets/stacks/figma.svg";
+import linux from "@/assets/stacks/linux.svg";
+import unity from "@/assets/stacks/unity.svg";
+
 export default {
   data() {
     return {
@@ -7,37 +38,37 @@ export default {
           {
             id: 1,
             name: "Supreme Beats",
-            img: "/public/images/projects/sb.png",
+            img: sb,
           },
           {
             id: 2,
             name: "Luna Cosmetics",
-            img: "/public/images/projects/luna.png",
+            img: luna,
           },
           {
             id: 3,
             name: "Eye G",
-            img: "/public/images/projects/eg.png",
+            img: eg,
           },
           {
             id: 4,
             name: "Listing App",
-            img: "/public/images/projects/lca.png",
+            img: lca,
           },
           {
             id: 5,
             name: "Work Your Way",
-            img: "/public/images/projects/wyw.png",
+            img: wyw,
           },
           {
             id: 6,
             name: "Suntukan Simulator",
-            img: "/public/images/projects/ss.jpg",
+            img: ss,
           },
           {
             id: 7,
             name: "Rebolusyonaryo TD",
-            img: "/public/images/projects/rtd.jpg",
+            img: rtd,
           },
           {
             id: 8,
@@ -49,98 +80,98 @@ export default {
           {
             id: 1,
             name: "Revolver",
-            img: "/public/images/projects/secondary/revolver.jpg",
+            img: revolver,
           },
           {
             id: 2,
             name: "Donut",
-            img: "/public/images/projects/secondary/donut.jpg",
+            img: donut,
           },
           {
             id: 3,
             name: "Tank",
-            img: "/public/images/projects/secondary/tank.png",
+            img: tank,
           },
           {
             id: 4,
             name: "Tell 'em x Bawal Concert Poster",
-            img: "/public/images/projects/secondary/poster.jpg",
+            img: poster,
           },
           {
             id: 5,
             name: "Paul wit da 45 Album Art",
-            img: "/public/images/projects/secondary/paul-wit-da-45.jpg",
+            img: paulwitda45,
           },
           {
             id: 6,
             name: "Unplanned Album Art",
-            img: "/public/images/projects/secondary/unplanned.jpg",
+            img: unplanned,
           },
           {
             id: 7,
             name: "Screamin' Album Art",
-            img: "/public/images/projects/secondary/screamin.jpg",
+            img: screamin,
           },
           {
             id: 8,
             name: "Facebook (Criticism) Magazine",
-            img: "/public/images/projects/secondary/facebook.png",
+            img: facebook,
           },
           {
             id: 9,
             name: "Ukiyo Logo",
-            img: "/public/images/projects/secondary/ukiyo.png",
+            img: ukiyo,
           },
         ],
       },
       stacks: [
         {
           id: 1,
-          img: "/public/images/stacks/reactjs.svg",
+          img: reactjs,
         },
         {
           id: 2,
-          img: "/public/images/stacks/nodejs.svg",
+          img: nodejs,
         },
         {
           id: 3,
-          img: "/public/images/stacks/mongodb.svg",
+          img: mongodb,
         },
         {
           id: 4,
-          img: "/public/images/stacks/firebase.svg",
+          img: firebase,
         },
         {
           id: 5,
-          img: "/public/images/stacks/bootstrap.svg",
+          img: bootstrap,
         },
         {
           id: 6,
-          img: "/public/images/stacks/tailwind.svg",
+          img: tailwind,
         },
         {
           id: 7,
-          img: "/public/images/stacks/sass.svg",
+          img: sass,
         },
         {
           id: 8,
-          img: "/public/images/stacks/jquery.svg",
+          img: jquery,
         },
         {
           id: 9,
-          img: "/public/images/stacks/git.svg",
+          img: git,
         },
         {
           id: 10,
-          img: "/public/images/stacks/figma.svg",
+          img: figma,
         },
         {
           id: 11,
-          img: "/public/images/stacks/linux.svg",
+          img: linux,
         },
         {
           id: 12,
-          img: "/public/images/stacks/unity.svg",
+          img: unity,
         },
       ],
       certifications: [
