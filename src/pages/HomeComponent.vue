@@ -196,29 +196,41 @@ export default {
 <template>
   <div class="w-full h-screen flex" id="landing">
     <div
-      class="w-1/2 bg-[--white] h-full flex justify-center items-center flex-col bg-noise-white"
+      class="w-1/2 bg-[--white] h-full flex justify-center items-start flex-col bg-noise-white"
     >
-      <div class="-mt-12">
-        <p class="text-xl font-akira pb-8 text-[--black]">
+      <div class="-mt-12 ml-10">
+        <p class="2xl:text-xl text-lg font-akira 2xl:pb-8 pb-4 text-[--black]">
           Aspiring Full-Stack Developer
         </p>
-        <p class="text-6xl font-akira text-[--black] pb-8">
+        <p
+          class="2xl:text-6xl text-4xl font-akira text-[--black] 2xl:pb-8 pb-4"
+        >
           Hi, I'm Alvin Panerio
         </p>
         <div class="flex gap-5">
           <a
             href="https://github.com/alvinpanerio"
             target="_blank"
-            class="flex gap-3 mb-8 text-[--black] font-akira border border-4 border-[--black] p-2 hover:bg-[--black] hover:text-[--white] transition-all duration-300"
+            class="2xl:text-base text-xs items-center flex gap-3 mb-8 text-[--black] font-akira border border-4 border-[--black] p-2 hover:bg-[--black] hover:text-[--white] transition-all duration-300"
           >
             Visit Github
-            <unicon name="github" fill="black" hover="white"></unicon>
+            <unicon
+              name="github"
+              fill="black"
+              hover="white"
+              class="2xl:w-6 w-4 2xl:h-6 h-4"
+            ></unicon>
           </a>
           <button
-            class="flex gap-3 mb-8 text-[--black] font-akira border border-4 border-[--black] p-2 hover:bg-[--black] hover:text-[--white] transition-all duration-300"
+            class="2xl:text-base text-xs flex gap-3 mb-8 text-[--black] font-akira border border-4 border-[--black] p-2 hover:bg-[--black] hover:text-[--white] transition-all duration-300"
           >
             View Resume
-            <unicon name="file-alt" fill="black" hover="white"></unicon>
+            <unicon
+              name="file-alt"
+              fill="black"
+              hover="white"
+              class="2xl:w-6 w-4 2xl:h-6 h-4"
+            ></unicon>
           </button>
         </div>
         <!-- <p class="text-xs font-akira text-[--black] w-[400px]">
@@ -236,11 +248,11 @@ export default {
             <div class="w-3 h-3 bg-white rounded-full"></div>
             <div class="w-3 h-3 bg-white rounded-full"></div>
           </div>
-          <!-- <img
+          <img
             src="@/assets/pic.jpg"
             alt=""
             class="h-[500px] brightness-[.7]"
-          /> -->
+          />
         </div>
         <p class="text-[--white] font-akira" style="transform: rotate(90deg)">
           Lorem Ipsum
@@ -250,48 +262,52 @@ export default {
   </div>
   <div
     id="projects"
-    class="w-full h-max flex bg-[--black] bg-noise-black flex flex-col px-96"
+    class="w-full h-max flex bg-[--black] bg-noise-black flex flex-col 2xl:px-96 px-56"
   >
-    <p class="text-[--white] font-akira text-9xl mt-20">Projects</p>
+    <p class="text-[--white] font-akira 2xl:text-9xl text-8xl 2xl:mt-20 mt-14">
+      Projects
+    </p>
     <div class="w-full">
-      <p class="text-[--white] font-akira mt-20">
+      <p
+        class="text-[--white] font-akira 2xl:mt-20 mt-14 2xl:text-base text-sm"
+      >
         Primary Skills - Web Development/Game Development/Programming
       </p>
-      <div class="mt-10 flex flex-wrap justify-between gap-2 mb-10">
+      <div class="mt-10 flex flex-wrap justify-between gap-1 mb-10">
         <div v-for="i in projects.primary" :key="i.id">
           <li
             v-if="i.id % 2 === 0"
             class="mt-10 flex flex-wrap justify-between gap-10"
           >
             <div
-              class="bg-[#fdfdfd]/20 w-[545px] h-[250px] flex justify-center items-center relative"
+              class="bg-[#fdfdfd]/20 2xl:w-[545px] w-[390px] 2xl:h-[250px] h-[205px] flex justify-center items-center relative"
             >
               <p
-                class="absolute text-[--white] top-2 right-2 font-akira bg-[--black] p-2 z-20"
+                class="2xl:text-base text-xs absolute text-[--white] top-2 right-2 font-akira bg-[--black] p-2 z-20"
               >
                 {{ i.name }}
               </p>
               <img
                 :src="i.img"
                 alt=""
-                class="h-[200px] projects-img-even transition-all duration-700"
+                class="2xl:h-[200px] h-[155px] projects-img-even transition-all duration-700"
               />
             </div>
           </li>
 
           <li v-else class="mt-10 flex flex-wrap justify-between gap-10">
             <div
-              class="bg-[#fdfdfd]/20 w-[545px] h-[250px] flex justify-center items-center relative"
+              class="bg-[#fdfdfd]/20 2xl:w-[545px] w-[390px] 2xl:h-[250px] h-[205px] flex justify-center items-center relative"
             >
               <p
-                class="absolute text-[--white] top-2 left-2 font-akira bg-[--black] p-2 z-20"
+                class="2xl:text-base text-xs absolute text-[--white] top-2 left-2 font-akira bg-[--black] p-2 z-20"
               >
                 {{ i.name }}
               </p>
               <img
                 :src="i.img"
                 alt=""
-                class="h-[200px] projects-img-odd transition-all duration-700"
+                class="2xl:h-[200px] h-[155px] projects-img-odd transition-all duration-700"
               />
             </div>
           </li>
@@ -299,7 +315,7 @@ export default {
       </div>
     </div>
     <div class="w-full">
-      <p class="text-[--white] font-akira mt-20">
+      <p class="text-[--white] font-akira 2xl:mt-20 mt-14">
         Secondary Skills - Graphic Design/3D Modelling
       </p>
       <div class="mt-10 flex flex-wrap justify-between gap-2 mb-10">
@@ -309,34 +325,34 @@ export default {
             class="mt-10 flex flex-wrap justify-between gap-10"
           >
             <div
-              class="bg-[#fdfdfd]/20 w-[545px] h-[250px] flex justify-center items-center relative"
+              class="bg-[#fdfdfd]/20 2xl:w-[545px] w-[390px] 2xl:h-[250px] h-[205px] flex justify-center items-center relative"
             >
               <p
-                class="absolute text-[--white] top-2 right-2 font-akira bg-[--black] p-2 z-20"
+                class="2xl:text-base text-xs absolute text-[--white] top-2 right-2 font-akira bg-[--black] p-2 z-20"
               >
                 {{ i.name }}
               </p>
               <img
                 :src="i.img"
                 alt=""
-                class="h-[200px] projects-img-even transition-all duration-700"
+                class="2xl:h-[200px] h-[155px] projects-img-even transition-all duration-700"
               />
             </div>
           </li>
 
           <li v-else class="mt-10 flex flex-wrap justify-between gap-10">
             <div
-              class="bg-[#fdfdfd]/20 w-[545px] h-[250px] flex justify-center items-center relative"
+              class="bg-[#fdfdfd]/20 2xl:w-[545px] w-[390px] 2xl:h-[250px] h-[205px] flex justify-center items-center relative"
             >
               <p
-                class="absolute text-[--white] top-2 left-2 font-akira bg-[--black] p-2 z-20"
+                class="2xl:text-base text-xs absolute text-[--white] top-2 left-2 font-akira bg-[--black] p-2 z-20"
               >
                 {{ i.name }}
               </p>
               <img
                 :src="i.img"
                 alt=""
-                class="h-[200px] projects-img-odd transition-all duration-700"
+                class="2xl:h-[200px] h-[155px] projects-img-odd transition-all duration-700"
               />
             </div>
           </li>
@@ -344,7 +360,7 @@ export default {
       </div>
     </div>
     <div class="w-full">
-      <p class="text-[--white] font-akira mt-20">
+      <p class="text-[--white] font-akira 2xl:mt-20 mt-14">
         Filler Skills - Sketching/Painting/Digital Art/Beatmaking
       </p>
       <div class="mt-10 flex flex-wrap justify-between gap-2 mb-10">
@@ -354,34 +370,34 @@ export default {
             class="mt-10 flex flex-wrap justify-between gap-10"
           >
             <div
-              class="bg-[#fdfdfd]/20 w-[545px] h-[250px] flex justify-center items-center relative"
+              class="bg-[#fdfdfd]/20 2xl:w-[545px] w-[390px] 2xl:h-[250px] h-[205px] flex justify-center items-center relative"
             >
               <p
-                class="absolute text-[--white] top-2 right-2 font-akira bg-[--black] p-2 z-20"
+                class="2xl:text-base text-xs absolute text-[--white] top-2 right-2 font-akira bg-[--black] p-2 z-20"
               >
                 {{ i.name }}
               </p>
               <img
                 :src="i.img"
                 alt=""
-                class="h-[200px] projects-img-even transition-all duration-700"
+                class="2xl:h-[200px] h-[155px] projects-img-even transition-all duration-700"
               />
             </div>
           </li>
 
           <li v-else class="mt-10 flex flex-wrap justify-between gap-10">
             <div
-              class="bg-[#fdfdfd]/20 w-[545px] h-[250px] flex justify-center items-center relative"
+              class="bg-[#fdfdfd]/20 2xl:w-[545px] w-[390px] 2xl:h-[250px] h-[205px] flex justify-center items-center relative"
             >
               <p
-                class="absolute text-[--white] top-2 left-2 font-akira bg-[--black] p-2 z-20"
+                class="2xl:text-base text-xs absolute text-[--white] top-2 left-2 font-akira bg-[--black] p-2 z-20"
               >
                 {{ i.name }}
               </p>
               <img
                 :src="i.img"
                 alt=""
-                class="h-[200px] projects-img-odd transition-all duration-700"
+                class="2xl:h-[200px] h-[155px] projects-img-odd transition-all duration-700"
               />
             </div>
           </li>
@@ -391,17 +407,21 @@ export default {
   </div>
   <div
     id="about"
-    class="w-full h-screen flex bg-[--white] bg-noise-white flex flex-col px-96"
+    class="w-full 2xl:h-screen 2xl:pb-0 pb-14 flex bg-[--white] bg-noise-white flex flex-col 2xl:px-96 px-56"
   >
-    <p class="text-[--black] font-akira text-9xl mt-20">About</p>
+    <p class="text-[--black] font-akira 2xl:text-9xl text-8xl 2xl:mt-20 mt-14">
+      About
+    </p>
     <div>
-      <p class="font-akira text-2xl mt-5">
+      <p class="font-akira 2xl:text-2xl text-xl mt-5">
         Hi, I'm an aspiring full-stack developer with experience building static
         and dynamic sites using modern web stacks.
       </p>
       <div class="flex gap-10">
         <div class="w-1/2 h-max">
-          <p class="font-akira text-lg mt-12">Techonology Stacks</p>
+          <p class="font-akira 2xl:text-lg text-base 2xl:mt-12 mt-8">
+            Techonology Stacks
+          </p>
           <div class="flex gap-5">
             <div class="flex flex-wrap mt-5">
               <div v-for="i in stacks" v-bind:key="i.id">
@@ -410,63 +430,69 @@ export default {
             </div>
           </div>
           <div>
-            <p class="font-akira text-lg mt-8 mb-5">Other Links</p>
+            <p class="font-akira 2xl:text-lg text-base mt-8 mb-5">
+              Other Links
+            </p>
             <div class="flex flex-col gap-5">
               <div
                 class="flex gap-3 items-center hover:gap-6 transition-all duration-300"
               >
                 <a
                   href="https://facebook.com/alvin.panerio.9"
-                  class="text-[--black] text-lg font-bold"
+                  class="text-[--black] 2xl:text-lg text-base font-bold"
                   target="_blank"
                 >
                   Facebook
                 </a>
-                <p class="text-[--black] text-lg">→</p>
+                <p class="text-[--black] 2xl:text-lg text-base">→</p>
               </div>
               <div
                 class="flex gap-3 items-center hover:gap-6 transition-all duration-300"
               >
                 <a
                   href="https://github.com/alvinpanerio"
-                  class="text-[--black] text-lg font-bold"
+                  class="text-[--black] 2xl:text-lg text-base font-bold"
                   target="_blank"
                 >
                   Github
                 </a>
-                <p class="text-[--black] text-lg">→</p>
+                <p class="text-[--black] 2xl:text-lg text-base">→</p>
               </div>
               <div
                 class="flex gap-3 items-center hover:gap-6 transition-all duration-300"
               >
                 <a
                   href="https://linkedin.com/in/alvinpanerio"
-                  class="text-[--black] text-lg font-bold"
+                  class="text-[--black] 2xl:text-lg text-base font-bold"
                   target="_blank"
                 >
                   Linkedin
                 </a>
-                <p class="text-[--black] text-lg">→</p>
+                <p class="text-[--black] 2xl:text-lg text-base">→</p>
               </div>
             </div>
           </div>
         </div>
         <div class="w-1/2 h-max">
-          <p class="font-akira text-lg mt-12">Certifications</p>
+          <p class="font-akira 2xl:text-lg text-base 2xl:mt-12 mt-8">
+            Certifications
+          </p>
           <div class="flex flex-wrap mt-8 gap-3">
             <div
               v-for="i in certifications"
               v-bind:key="i.id"
               class="bg-[--black] w-4/5 h-max rounded-xl p-5 font-inter"
             >
-              <p class="text-[--white]">{{ i.name }}</p>
-              <p class="text-[--gray] mt-2 mb-1">{{ i.org }}</p>
+              <p class="text-[--white] 2xl:text-base text-sm">{{ i.name }}</p>
+              <p class="text-[--gray] mt-2 mb-1 2xl:text-base text-sm">
+                {{ i.org }}
+              </p>
               <div
                 class="flex gap-3 items-center hover:gap-6 transition-all duration-300"
               >
                 <a
                   :href="i.link"
-                  class="text-[--white] text-sm font-semibold"
+                  class="text-[--white] 2xl:text-sm text-xs font-semibold"
                   target="_blank"
                 >
                   View Certificate
@@ -481,44 +507,50 @@ export default {
   </div>
   <div
     id="contact"
-    class="w-full h-screen flex bg-[--black] bg-noise-black flex flex-col px-96"
+    class="w-full 2xl:h-screen 2xl:pb-0 pb-14 flex bg-[--black] bg-noise-black flex flex-col 2xl:px-96 px-56"
   >
-    <p class="text-[--white] font-akira text-9xl mt-20">Contact</p>
+    <p class="text-[--white] font-akira 2xl:text-9xl text-8xl 2xl:mt-20 mt-14">
+      Contact
+    </p>
     <div>
-      <p class="font-akira text-2xl mt-5 text-[--white]">
+      <p class="font-akira 2xl:text-2xl text-xl mt-5 text-[--white]">
         Let's start building a project together!
       </p>
       <div class="flex gap-3">
-        <div class="font-inter mt-14 w-1/2 text-[--white]">
+        <div class="font-inter 2xl:mt-14 mt-10 w-1/2 text-[--white]">
           <div class="flex gap-10 border-y-2 border-gray-400 py-5">
-            <p class="text-gray-400 text-sm">01</p>
+            <p class="text-gray-400 2xl:text-sm text-xs">01</p>
             <div class="flex flex-col gap-5">
-              <p class="text-[--white] text-lg">What's your name?</p>
+              <p class="text-[--white] 2xl:text-lg text-base">
+                What's your name?
+              </p>
               <input
                 type="text"
-                class="bg-transparent focus:outline-none text-[--white] placeholder-gray-400 text-lg"
+                class="bg-transparent focus:outline-none text-[--white] placeholder-gray-400 2xl:text-lg text-base"
                 placeholder="John Doe"
               />
             </div>
           </div>
           <div class="flex gap-10 border-b-2 border-gray-400 py-5">
-            <p class="text-gray-400 text-sm">02</p>
+            <p class="text-gray-400 2xl:text-sm text-xs">02</p>
             <div class="flex flex-col gap-5">
-              <p class="text-[--white] text-lg">What's your email?</p>
+              <p class="text-[--white] 2xl:text-lg text-base">
+                What's your email?
+              </p>
               <input
                 type="email"
-                class="bg-transparent focus:outline-none text-[--white] placeholder-gray-400 text-lg"
+                class="bg-transparent focus:outline-none text-[--white] placeholder-gray-400 2xl:text-lg text-base"
                 placeholder="johndoe@domain.com"
               />
             </div>
           </div>
           <div class="flex gap-10 border-gray-400 py-5">
-            <p class="text-gray-400 text-sm">03</p>
+            <p class="text-gray-400 2xl:text-sm text-xs">03</p>
             <div class="flex flex-col gap-5 w-full">
-              <p class="text-[--white] text-lg">Your Message</p>
+              <p class="text-[--white] 2xl:text-lg text-base">Your Message</p>
               <textarea
                 type="text"
-                class="bg-transparent focus:outline-none text-[--white] placeholder-gray-400 text-lg h-[150px] resize-none"
+                class="bg-transparent focus:outline-none text-[--white] placeholder-gray-400 2xl:text-lg text-base h-[150px] resize-none"
                 placeholder="Aa..."
               ></textarea>
             </div>
@@ -526,56 +558,60 @@ export default {
           <div class="w-full flex gap-10 items-center">
             <p class="w-full h-[2px] bg-gray-400"></p>
             <button
-              class="flex gap-3 text-[--white] font-akira border border-4 border-[--white] p-2 hover:bg-[--white] hover:text-[--black] transition-all duration-300"
+              class="2xl:text-base text-xs items-center flex gap-3 text-[--white] font-akira border border-4 border-[--white] p-2 hover:bg-[--white] hover:text-[--black] transition-all duration-300"
             >
               Submit
             </button>
           </div>
         </div>
-        <div class="mt-11 w-1/2 pl-24 text-[--white] flex flex-col gap-3">
-          <div class="font-inter">
-            <p class="font-akira mb-2 text-lg">Contact Details</p>
-            <p>alvinedoyagapanerio@gmail.com</p>
-            <p>+63 9511399954</p>
-            <p>Valenzuela City, Metro Manila, PH</p>
+        <div
+          class="2xl:mt-11 mt-8 w-1/2 pl-24 text-[--white] flex flex-col gap-3"
+        >
+          <div class="font-inter flex flex-col gap-2">
+            <p class="font-akira mb-2 2xl:text-lg text-base">Contact Details</p>
+            <p class="2xl:text-base text-sm">alvinedoyagapanerio@gmail.com</p>
+            <p class="2xl:text-base text-sm">+63 9511399954</p>
+            <p class="2xl:text-base text-sm">
+              Valenzuela City, Metro Manila, PH
+            </p>
           </div>
-          <p class="font-akira text-lg mt-8 mb-2">Other Links</p>
+          <p class="font-akira 2xl:text-lg text-base mt-8 mb-2">Other Links</p>
           <div class="flex flex-col gap-3">
             <div
               class="flex gap-3 items-center hover:gap-6 transition-all duration-300"
             >
               <a
                 href="https://facebook.com/alvin.panerio.9"
-                class="text-[--white] text-lg font-bold"
+                class="text-[--white] 2xl:text-lg text-base font-bold"
                 target="_blank"
               >
                 Facebook
               </a>
-              <p class="text-[--white] text-lg">→</p>
+              <p class="text-[--white] 2xl:text-lg text-base">→</p>
             </div>
             <div
               class="flex gap-3 items-center hover:gap-6 transition-all duration-300"
             >
               <a
                 href="https://github.com/alvinpanerio"
-                class="text-[--white] text-lg font-bold"
+                class="text-[--white] 2xl:text-lg text-base font-bold"
                 target="_blank"
               >
                 Github
               </a>
-              <p class="text-[--white] text-lg">→</p>
+              <p class="text-[--white] 2xl:text-lg text-base">→</p>
             </div>
             <div
               class="flex gap-3 items-center hover:gap-6 transition-all duration-300"
             >
               <a
                 href="https://linkedin.com/in/alvinpanerio"
-                class="text-[--white] text-lg font-bold"
+                class="text-[--white] 2xl:text-lg text-base font-bold"
                 target="_blank"
               >
                 Linkedin
               </a>
-              <p class="text-[--white] text-lg">→</p>
+              <p class="text-[--white] 2xl:text-lg text-base">→</p>
             </div>
           </div>
         </div>

@@ -4,10 +4,21 @@ import { onMounted, onBeforeUnmount, ref } from "vue";
 const hasScrolled = ref(true);
 const hasScrolledNum = ref(0);
 
+const screenWidth = ref(
+  window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth
+);
+
 const handleScroll = () => {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  hasScrolled.value = scrollTop < 270;
-  hasScrolledNum.value++;
+  if (screenWidth.value >= 1920 && screenWidth.value < 1366) {
+    hasScrolled.value = scrollTop < 270;
+    hasScrolledNum.value++;
+  } else if (screenWidth.value >= 1280) {
+    hasScrolled.value = scrollTop < 140;
+    hasScrolledNum.value++;
+  }
 };
 
 onMounted(() => {
