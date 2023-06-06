@@ -26,7 +26,7 @@ onBeforeUnmount(() => {
   >
     <!-- <img src="@/assets/logo.jpg" alt="asd" class="w-[30px] h-[30px]" /> -->
     <div class="flex gap-8 justify-between items-center">
-      <p class="font-akira">AP</p>
+      <p class="font-akira">AP.</p>
       <p class="w-32 h-1 bg-[--black]"></p>
     </div>
     <div class="flex gap-8 justify-between items-center">

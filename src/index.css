@@ -10,6 +10,7 @@
 
 * {
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 .font-akira {
@@ -26,7 +27,7 @@
 }
 
 .bg-noise-black {
-  background-image: url(./assets/noise-black.png);
+  background-image: url(./assets/noise-black-red.png);
   background-size: auto;
 }
 

@@ -7,37 +7,37 @@ export default {
           {
             id: 1,
             name: "Supreme Beats",
-            img: "../../src/assets/projects/sb.png",
+            img: "/src/assets/projects/sb.png",
           },
           {
             id: 2,
             name: "Luna Cosmetics",
-            img: "../../src/assets/projects/luna.png",
+            img: "/src/assets/projects/luna.png",
           },
           {
             id: 3,
             name: "Eye G",
-            img: "../../src/assets/projects/eg.png",
+            img: "/src/assets/projects/eg.png",
           },
           {
             id: 4,
             name: "Listing App",
-            img: "../../src/assets/projects/lca.png",
+            img: "/src/assets/projects/lca.png",
           },
           {
             id: 5,
             name: "Work Your Way",
-            img: "../../src/assets/projects/wyw.png",
+            img: "/src/assets/projects/wyw.png",
           },
           {
             id: 6,
             name: "Suntukan Simulator",
-            img: "../../src/assets/projects/ss.jpg",
+            img: "/src/assets/projects/ss.jpg",
           },
           {
             id: 7,
             name: "Rebolusyonaryo TD",
-            img: "../../src/assets/projects/rtd.jpg",
+            img: "/src/assets/projects/rtd.jpg",
           },
           {
             id: 8,
@@ -49,98 +49,98 @@ export default {
           {
             id: 1,
             name: "Revolver",
-            img: "../../src/assets/projects/secondary/revolver.jpg",
+            img: "/src/assets/projects/secondary/revolver.jpg",
           },
           {
             id: 2,
             name: "Donut",
-            img: "../../src/assets/projects/secondary/donut.jpg",
+            img: "/src/assets/projects/secondary/donut.jpg",
           },
           {
             id: 3,
             name: "Tank",
-            img: "../../src/assets/projects/secondary/tank.png",
+            img: "/src/assets/projects/secondary/tank.png",
           },
           {
             id: 4,
             name: "Tell 'em x Bawal Concert Poster",
-            img: "../../src/assets/projects/secondary/poster.jpg",
+            img: "/src/assets/projects/secondary/poster.jpg",
           },
           {
             id: 5,
             name: "Paul wit da 45 Album Art",
-            img: "../../src/assets/projects/secondary/paul-wit-da-45.jpg",
+            img: "/src/assets/projects/secondary/paul-wit-da-45.jpg",
           },
           {
             id: 6,
             name: "Unplanned Album Art",
-            img: "../../src/assets/projects/secondary/unplanned.jpg",
+            img: "/src/assets/projects/secondary/unplanned.jpg",
           },
           {
             id: 7,
             name: "Screamin' Album Art",
-            img: "../../src/assets/projects/secondary/screamin.jpg",
+            img: "/src/assets/projects/secondary/screamin.jpg",
           },
           {
             id: 8,
             name: "Facebook (Criticism) Magazine",
-            img: "../../src/assets/projects/secondary/facebook.png",
+            img: "/src/assets/projects/secondary/facebook.png",
           },
           {
             id: 9,
             name: "Ukiyo Logo",
-            img: "../../src/assets/projects/secondary/ukiyo.png",
+            img: "/src/assets/projects/secondary/ukiyo.png",
           },
         ],
       },
       stacks: [
         {
           id: 1,
-          img: "../../src/assets/stacks/reactjs.svg",
+          img: "/src/assets/stacks/reactjs.svg",
         },
         {
           id: 2,
-          img: "../../src/assets/stacks/nodejs.svg",
+          img: "/src/assets/stacks/nodejs.svg",
         },
         {
           id: 3,
-          img: "../../src/assets/stacks/mongodb.svg",
+          img: "/src/assets/stacks/mongodb.svg",
         },
         {
           id: 4,
-          img: "../../src/assets/stacks/firebase.svg",
+          img: "/src/assets/stacks/firebase.svg",
         },
         {
           id: 5,
-          img: "../../src/assets/stacks/bootstrap.svg",
+          img: "/src/assets/stacks/bootstrap.svg",
         },
         {
           id: 6,
-          img: "../../src/assets/stacks/tailwind.svg",
+          img: "/src/assets/stacks/tailwind.svg",
         },
         {
           id: 7,
-          img: "../../src/assets/stacks/sass.svg",
+          img: "/src/assets/stacks/sass.svg",
         },
         {
           id: 8,
-          img: "../../src/assets/stacks/jquery.svg",
+          img: "/src/assets/stacks/jquery.svg",
         },
         {
           id: 9,
-          img: "../../src/assets/stacks/git.svg",
+          img: "/src/assets/stacks/git.svg",
         },
         {
           id: 10,
-          img: "../../src/assets/stacks/figma.svg",
+          img: "/src/assets/stacks/figma.svg",
         },
         {
           id: 11,
-          img: "../../src/assets/stacks/linux.svg",
+          img: "/src/assets/stacks/linux.svg",
         },
         {
           id: 12,
-          img: "../../src/assets/stacks/unity.svg",
+          img: "/src/assets/stacks/unity.svg",
         },
       ],
       certifications: [
@@ -205,11 +205,11 @@ export default {
             <div class="w-3 h-3 bg-white rounded-full"></div>
             <div class="w-3 h-3 bg-white rounded-full"></div>
           </div>
-          <img
+          <!-- <img
             src="@/assets/pic.jpg"
             alt=""
             class="h-[500px] brightness-[.7]"
-          />
+          /> -->
         </div>
         <p class="text-[--white] font-akira" style="transform: rotate(90deg)">
           Lorem Ipsum
@@ -370,7 +370,7 @@ export default {
       </p>
       <div class="flex gap-10">
         <div class="w-1/2 h-max">
-          <p class="font-akira text-lg mt-12">Techonology Stack</p>
+          <p class="font-akira text-lg mt-12">Techonology Stacks</p>
           <div class="flex gap-5">
             <div class="flex flex-wrap mt-5">
               <div v-for="i in stacks" v-bind:key="i.id">
@@ -444,6 +444,70 @@ export default {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    id="contact"
+    class="w-full h-screen flex bg-[--black] bg-noise-black flex flex-col px-96"
+  >
+    <p class="text-[--white] font-akira text-9xl mt-20">Contact</p>
+    <div>
+      <p class="font-akira text-2xl mt-5 text-[--white]">
+        Let's start building a project together!
+      </p>
+      <div class="flex gap-3">
+        <div class="font-inter mt-14 w-1/2 text-[--white]">
+          <div class="flex gap-10 border-y-2 border-gray-400 py-5">
+            <p class="text-gray-400 text-sm">01</p>
+            <div class="flex flex-col gap-5">
+              <p class="text-[--white] text-lg">What's your name?</p>
+              <input
+                type="text"
+                class="bg-transparent focus:outline-none text-[--white] placeholder-gray-400 text-lg"
+                placeholder="John Doe"
+              />
+            </div>
+          </div>
+          <div class="flex gap-10 border-b-2 border-gray-400 py-5">
+            <p class="text-gray-400 text-sm">02</p>
+            <div class="flex flex-col gap-5">
+              <p class="text-[--white] text-lg">What's your email?</p>
+              <input
+                type="email"
+                class="bg-transparent focus:outline-none text-[--white] placeholder-gray-400 text-lg"
+                placeholder="johndoe@domain.com"
+              />
+            </div>
+          </div>
+          <div class="flex gap-10 border-gray-400 py-5">
+            <p class="text-gray-400 text-sm">03</p>
+            <div class="flex flex-col gap-5 w-full">
+              <p class="text-[--white] text-lg">Your Message</p>
+              <textarea
+                type="text"
+                class="bg-transparent focus:outline-none text-[--white] placeholder-gray-400 text-lg h-[150px] resize-none"
+                placeholder="Aa..."
+              ></textarea>
+            </div>
+          </div>
+          <div class="w-full flex gap-10 items-center">
+            <p class="w-full h-[2px] bg-gray-400"></p>
+            <button
+              class="flex gap-3 text-[--white] font-akira border border-4 border-[--white] p-2 hover:bg-[--white] hover:text-[--black] transition-all duration-300"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+        <div
+          class="font-inter mt-11 w-1/2 pl-24 text-[--white] flex flex-col gap-3"
+        >
+          <p class="font-akira mb-2 text-lg">Contact Details</p>
+          <p>alvinedoyagapanerio@gmail.com</p>
+          <p>+63 9511399954</p>
+          <p>Valenzuela City, Mertro Manila, PH</p>
         </div>
       </div>
     </div>
