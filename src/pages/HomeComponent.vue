@@ -7,37 +7,37 @@ export default {
           {
             id: 1,
             name: "Supreme Beats",
-            img: "/src/assets/projects/sb.png",
+            img: "/public/images/projects/sb.png",
           },
           {
             id: 2,
             name: "Luna Cosmetics",
-            img: "/src/assets/projects/luna.png",
+            img: "/public/images/projects/luna.png",
           },
           {
             id: 3,
             name: "Eye G",
-            img: "/src/assets/projects/eg.png",
+            img: "/public/images/projects/eg.png",
           },
           {
             id: 4,
             name: "Listing App",
-            img: "/src/assets/projects/lca.png",
+            img: "/public/images/projects/lca.png",
           },
           {
             id: 5,
             name: "Work Your Way",
-            img: "/src/assets/projects/wyw.png",
+            img: "/public/images/projects/wyw.png",
           },
           {
             id: 6,
             name: "Suntukan Simulator",
-            img: "/src/assets/projects/ss.jpg",
+            img: "/public/images/projects/ss.jpg",
           },
           {
             id: 7,
             name: "Rebolusyonaryo TD",
-            img: "/src/assets/projects/rtd.jpg",
+            img: "/public/images/projects/rtd.jpg",
           },
           {
             id: 8,
@@ -49,98 +49,98 @@ export default {
           {
             id: 1,
             name: "Revolver",
-            img: "/src/assets/projects/secondary/revolver.jpg",
+            img: "/public/images/projects/secondary/revolver.jpg",
           },
           {
             id: 2,
             name: "Donut",
-            img: "/src/assets/projects/secondary/donut.jpg",
+            img: "/public/images/projects/secondary/donut.jpg",
           },
           {
             id: 3,
             name: "Tank",
-            img: "/src/assets/projects/secondary/tank.png",
+            img: "/public/images/projects/secondary/tank.png",
           },
           {
             id: 4,
             name: "Tell 'em x Bawal Concert Poster",
-            img: "/src/assets/projects/secondary/poster.jpg",
+            img: "/public/images/projects/secondary/poster.jpg",
           },
           {
             id: 5,
             name: "Paul wit da 45 Album Art",
-            img: "/src/assets/projects/secondary/paul-wit-da-45.jpg",
+            img: "/public/images/projects/secondary/paul-wit-da-45.jpg",
           },
           {
             id: 6,
             name: "Unplanned Album Art",
-            img: "/src/assets/projects/secondary/unplanned.jpg",
+            img: "/public/images/projects/secondary/unplanned.jpg",
           },
           {
             id: 7,
             name: "Screamin' Album Art",
-            img: "/src/assets/projects/secondary/screamin.jpg",
+            img: "/public/images/projects/secondary/screamin.jpg",
           },
           {
             id: 8,
             name: "Facebook (Criticism) Magazine",
-            img: "/src/assets/projects/secondary/facebook.png",
+            img: "/public/images/projects/secondary/facebook.png",
           },
           {
             id: 9,
             name: "Ukiyo Logo",
-            img: "/src/assets/projects/secondary/ukiyo.png",
+            img: "/public/images/projects/secondary/ukiyo.png",
           },
         ],
       },
       stacks: [
         {
           id: 1,
-          img: "/src/assets/stacks/reactjs.svg",
+          img: "/public/images/stacks/reactjs.svg",
         },
         {
           id: 2,
-          img: "/src/assets/stacks/nodejs.svg",
+          img: "/public/images/stacks/nodejs.svg",
         },
         {
           id: 3,
-          img: "/src/assets/stacks/mongodb.svg",
+          img: "/public/images/stacks/mongodb.svg",
         },
         {
           id: 4,
-          img: "/src/assets/stacks/firebase.svg",
+          img: "/public/images/stacks/firebase.svg",
         },
         {
           id: 5,
-          img: "/src/assets/stacks/bootstrap.svg",
+          img: "/public/images/stacks/bootstrap.svg",
         },
         {
           id: 6,
-          img: "/src/assets/stacks/tailwind.svg",
+          img: "/public/images/stacks/tailwind.svg",
         },
         {
           id: 7,
-          img: "/src/assets/stacks/sass.svg",
+          img: "/public/images/stacks/sass.svg",
         },
         {
           id: 8,
-          img: "/src/assets/stacks/jquery.svg",
+          img: "/public/images/stacks/jquery.svg",
         },
         {
           id: 9,
-          img: "/src/assets/stacks/git.svg",
+          img: "/public/images/stacks/git.svg",
         },
         {
           id: 10,
-          img: "/src/assets/stacks/figma.svg",
+          img: "/public/images/stacks/figma.svg",
         },
         {
           id: 11,
-          img: "/src/assets/stacks/linux.svg",
+          img: "/public/images/stacks/linux.svg",
         },
         {
           id: 12,
-          img: "/src/assets/stacks/unity.svg",
+          img: "/public/images/stacks/unity.svg",
         },
       ],
       certifications: [
@@ -385,7 +385,7 @@ export default {
                 class="flex gap-3 items-center hover:gap-6 transition-all duration-300"
               >
                 <a
-                  href="#"
+                  href="https://facebook.com/alvin.panerio.9"
                   class="text-[--black] text-lg font-bold"
                   target="_blank"
                 >
@@ -409,7 +409,7 @@ export default {
                 class="flex gap-3 items-center hover:gap-6 transition-all duration-300"
               >
                 <a
-                  href="https://www.linkedin.com/in/alvinpanerio"
+                  href="https://linkedin.com/in/alvinpanerio"
                   class="text-[--black] text-lg font-bold"
                   target="_blank"
                 >
@@ -501,13 +501,52 @@ export default {
             </button>
           </div>
         </div>
-        <div
-          class="font-inter mt-11 w-1/2 pl-24 text-[--white] flex flex-col gap-3"
-        >
-          <p class="font-akira mb-2 text-lg">Contact Details</p>
-          <p>alvinedoyagapanerio@gmail.com</p>
-          <p>+63 9511399954</p>
-          <p>Valenzuela City, Mertro Manila, PH</p>
+        <div class="mt-11 w-1/2 pl-24 text-[--white] flex flex-col gap-3">
+          <div class="font-inter">
+            <p class="font-akira mb-2 text-lg">Contact Details</p>
+            <p>alvinedoyagapanerio@gmail.com</p>
+            <p>+63 9511399954</p>
+            <p>Valenzuela City, Metro Manila, PH</p>
+          </div>
+          <p class="font-akira text-lg mt-8 mb-2">Other Links</p>
+          <div class="flex flex-col gap-3">
+            <div
+              class="flex gap-3 items-center hover:gap-6 transition-all duration-300"
+            >
+              <a
+                href="https://facebook.com/alvin.panerio.9"
+                class="text-[--white] text-lg font-bold"
+                target="_blank"
+              >
+                Facebook
+              </a>
+              <p class="text-[--white] text-lg">→</p>
+            </div>
+            <div
+              class="flex gap-3 items-center hover:gap-6 transition-all duration-300"
+            >
+              <a
+                href="https://github.com/alvinpanerio"
+                class="text-[--white] text-lg font-bold"
+                target="_blank"
+              >
+                Github
+              </a>
+              <p class="text-[--white] text-lg">→</p>
+            </div>
+            <div
+              class="flex gap-3 items-center hover:gap-6 transition-all duration-300"
+            >
+              <a
+                href="https://linkedin.com/in/alvinpanerio"
+                class="text-[--white] text-lg font-bold"
+                target="_blank"
+              >
+                Linkedin
+              </a>
+              <p class="text-[--white] text-lg">→</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
