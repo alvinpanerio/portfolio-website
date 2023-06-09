@@ -22,21 +22,21 @@ const handleScroll = () => {
   if (screenWidth.value >= 1920 && screenWidth.value > 1366) {
     hasScrolled.value = scrollTop < 230;
     scrollWhite.value =
-      (scrollTop > 230 && scrollTop < 5060) || scrollTop > 6300;
-    scrollBlack.value = scrollTop > 5060 && scrollTop < 6300;
+      (scrollTop > 230 && scrollTop < 5060) || scrollTop > 6100;
+    scrollBlack.value = scrollTop > 5060 && scrollTop < 6100;
 
     projectsCircle.value = scrollTop > 230 && scrollTop < 5060;
-    contactCircle.value = scrollTop > 6300;
-    aboutCircle.value = scrollTop > 5060 && scrollTop < 6300;
+    contactCircle.value = scrollTop > 6100;
+    aboutCircle.value = scrollTop > 5060 && scrollTop < 6100;
   } else if (screenWidth.value >= 1366) {
     hasScrolled.value = scrollTop < 230;
     scrollWhite.value =
-      (scrollTop > 230 && scrollTop < 4170) || scrollTop > 5100;
-    scrollBlack.value = scrollTop > 4170 && scrollTop < 5100;
+      (scrollTop > 230 && scrollTop < 4170) || scrollTop > 5200;
+    scrollBlack.value = scrollTop > 4170 && scrollTop < 5200;
 
     projectsCircle.value = scrollTop > 230 && scrollTop < 4170;
     contactCircle.value = scrollTop > 5100;
-    aboutCircle.value = scrollTop > 4170 && scrollTop < 5100;
+    aboutCircle.value = scrollTop > 4170 && scrollTop < 5200;
   }
 };
 

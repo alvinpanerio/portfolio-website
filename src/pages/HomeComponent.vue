@@ -17,6 +17,16 @@ import screamin from "@/assets/projects/secondary/screamin.jpg";
 import facebook from "@/assets/projects/secondary/facebook.png";
 import ukiyo from "@/assets/projects/secondary/ukiyo.png";
 
+import oldman from "@/assets/projects/fillers/oldman.jpg";
+import bird from "@/assets/projects/fillers/bird.jpeg";
+import zae from "@/assets/projects/fillers/zae.jpeg";
+import niki from "@/assets/projects/fillers/niki.jpg";
+import klamar from "@/assets/projects/fillers/klamar.jpg";
+import wsmith from "@/assets/projects/fillers/wsmith.jpg";
+import shiestydrill from "@/assets/projects/fillers/shiestydrill.jpg";
+import pharaoh from "@/assets/projects/fillers/pharaoh.jpg";
+import summerflute from "@/assets/projects/fillers/summer-flute.png";
+
 import reactjs from "@/assets/stacks/reactjs.svg";
 import nodejs from "@/assets/stacks/nodejs.svg";
 import mongodb from "@/assets/stacks/mongodb.svg";
@@ -245,6 +255,128 @@ export default {
             },
           },
         ],
+        filler: [
+          {
+            id: 1,
+            name: "Old Man",
+            img: oldman,
+            web: {
+              hasLink: true,
+              link: "https://freeimage.host/i/H44qmv9",
+            },
+            soundcloud: {
+              hasLink: false,
+            },
+          },
+          {
+            id: 2,
+            name: "Bird",
+            img: bird,
+            web: {
+              hasLink: true,
+              link: "https://freeimage.host/i/H44B2Cx",
+            },
+            soundcloud: {
+              hasLink: false,
+            },
+          },
+          {
+            id: 3,
+            name: "Kendrick Lmao",
+            img: klamar,
+            web: {
+              hasLink: true,
+              link: "https://freeimage.host/i/H44qppe",
+            },
+            soundcloud: {
+              hasLink: false,
+            },
+          },
+          {
+            id: 4,
+            name: "Smith's Will",
+            img: wsmith,
+            web: {
+              hasLink: true,
+              link: "https://freeimage.host/i/H44B9Tu",
+            },
+            soundcloud: {
+              hasLink: false,
+            },
+          },
+          {
+            id: 5,
+            name: "Niki",
+            img: niki,
+            web: {
+              hasLink: true,
+              link: "https://freeimage.host/i/H44BHhb",
+            },
+            soundcloud: {
+              hasLink: false,
+            },
+          },
+          {
+            id: 6,
+            name: "Zae",
+            img: zae,
+            web: {
+              hasLink: true,
+              link: "https://freeimage.host/i/H44BJQj",
+            },
+            soundcloud: {
+              hasLink: false,
+            },
+          },
+          {
+            id: 7,
+            name: "Paul wit da 45",
+            img: paulwitda45,
+            web: {
+              hasLink: true,
+              link: "https://soundcloud.com/alvin-panerio/paul-wit-da-45",
+            },
+            soundcloud: {
+              hasLink: true,
+            },
+          },
+          {
+            id: 8,
+            name: "Shiesty Drill",
+            img: shiestydrill,
+            web: {
+              hasLink: true,
+              link: "https://soundcloud.com/alvin-panerio/shiesty-drill",
+            },
+            soundcloud: {
+              hasLink: true,
+            },
+          },
+          {
+            id: 9,
+            name: "Pharaoh",
+            img: pharaoh,
+            web: {
+              hasLink: true,
+              link: "https://soundcloud.com/alvin-panerio/pharaoh",
+            },
+            soundcloud: {
+              hasLink: true,
+            },
+          },
+          {
+            id: 10,
+            name: "Summer Flute",
+            img: summerflute,
+            web: {
+              hasLink: true,
+              link: "https://soundcloud.com/alvin-panerio/summer-flute",
+            },
+            soundcloud: {
+              hasLink: true,
+            },
+          },
+        ],
       },
       stacks: [
         {
@@ -336,12 +468,10 @@ export default {
             class="2xl:text-base text-xs items-center flex gap-3 mb-8 text-[--black] font-akira border border-4 border-[--black] p-2 hover:bg-[--black] hover:text-[--white] transition-all duration-300"
           >
             Visit Github
-            <unicon
-              name="github"
-              fill="black"
-              hover="white"
+            <font-awesome-icon
+              :icon="['fab', 'github']"
               class="2xl:w-6 w-4 2xl:h-6 h-4"
-            ></unicon>
+            />
           </a>
           <a
             href="https://pdfhost.io/v/n0DJ1TjBG_alvinpanerioresume"
@@ -349,21 +479,15 @@ export default {
             class="2xl:text-base text-xs flex gap-3 mb-8 text-[--black] font-akira border border-4 border-[--black] p-2 hover:bg-[--black] hover:text-[--white] transition-all duration-300"
           >
             View Resume
-            <unicon
-              name="file-alt"
-              fill="black"
-              hover="white"
+            <font-awesome-icon
+              :icon="['fas', 'file-lines']"
               class="2xl:w-6 w-4 2xl:h-6 h-4"
-            ></unicon>
+            />
           </a>
         </div>
-        <!-- <p class="text-xs font-akira text-[--black] w-[400px]">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut aliquam
-          magni repellat architecto sint reiciendis fugit quo, alias officiis
-          necessitatibus.
-        </p> -->
       </div>
     </div>
+
     <div class="w-1/2 bg-[--black] h-full bg-noise-black">
       <div class="h-full flex items-center justify-center">
         <div>
@@ -372,15 +496,12 @@ export default {
             <div class="w-3 h-3 bg-white rounded-full"></div>
             <div class="w-3 h-3 bg-white rounded-full"></div>
           </div>
-          <!-- <img
+          <img
             src="@/assets/pic.jpg"
             alt=""
             class="h-[500px] brightness-[.7]"
-          /> -->
+          />
         </div>
-        <p class="text-[--white] font-akira" style="transform: rotate(90deg)">
-          Lorem Ipsum
-        </p>
       </div>
     </div>
   </div>
@@ -581,7 +702,7 @@ export default {
         Filler Skills - Sketching/Painting/Digital Art/Beatmaking
       </p>
       <div class="mt-10 flex flex-wrap justify-between gap-2 mb-10">
-        <div v-for="i in projects.secondary" :key="i.id">
+        <div v-for="i in projects.filler" :key="i.id">
           <li
             v-if="i.id % 2 === 0"
             class="mt-10 flex flex-wrap justify-between gap-10"
@@ -594,11 +715,189 @@ export default {
               >
                 {{ i.name }}
               </p>
+              <div v-if="i.soundcloud.hasLink">
+                <div v-if="i.name === 'Paul wit da 45'">
+                  <iframe
+                    width="100%"
+                    height="166"
+                    scrolling="no"
+                    frameborder="no"
+                    allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1335508303&color=%23b21d1c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                  ></iframe>
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: #cccccc;
+                      line-break: anywhere;
+                      word-break: normal;
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                      font-family: Interstate, Lucida Grande,
+                        Lucida Sans Unicode, Lucida Sans, Garuda, Verdana,
+                        Tahoma, sans-serif;
+                      font-weight: 100;
+                    "
+                  >
+                    <a
+                      href="https://soundcloud.com/alvin-panerio"
+                      title="Alvin Panerio"
+                      target="_blank"
+                      style="color: #cccccc; text-decoration: none"
+                      >Alvin Panerio</a
+                    >
+                    ·
+                    <a
+                      href="https://soundcloud.com/alvin-panerio/paul-wit-da-45"
+                      title="Paul Wit Da 45"
+                      target="_blank"
+                      style="color: #cccccc; text-decoration: none"
+                      >Paul Wit Da 45</a
+                    >
+                  </div>
+                </div>
+                <div v-if="i.name === 'Shiesty Drill'">
+                  <iframe
+                    width="100%"
+                    height="166"
+                    scrolling="no"
+                    frameborder="no"
+                    allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1335682783&color=%23b21d1c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                  ></iframe>
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: #cccccc;
+                      line-break: anywhere;
+                      word-break: normal;
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                      font-family: Interstate, Lucida Grande,
+                        Lucida Sans Unicode, Lucida Sans, Garuda, Verdana,
+                        Tahoma, sans-serif;
+                      font-weight: 100;
+                    "
+                  >
+                    <a
+                      href="https://soundcloud.com/alvin-panerio"
+                      title="Alvin Panerio"
+                      target="_blank"
+                      style="color: #cccccc; text-decoration: none"
+                      >Alvin Panerio</a
+                    >
+                    ·
+                    <a
+                      href="https://soundcloud.com/alvin-panerio/shiesty-drill"
+                      title="Shiesty Drill"
+                      target="_blank"
+                      style="color: #cccccc; text-decoration: none"
+                      >Shiesty Drill</a
+                    >
+                  </div>
+                </div>
+                <div v-if="i.name === 'Pharaoh'">
+                  <iframe
+                    width="100%"
+                    height="166"
+                    scrolling="no"
+                    frameborder="no"
+                    allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1335513730&color=%23b21d1c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                  ></iframe>
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: #cccccc;
+                      line-break: anywhere;
+                      word-break: normal;
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                      font-family: Interstate, Lucida Grande,
+                        Lucida Sans Unicode, Lucida Sans, Garuda, Verdana,
+                        Tahoma, sans-serif;
+                      font-weight: 100;
+                    "
+                  >
+                    <a
+                      href="https://soundcloud.com/alvin-panerio"
+                      title="Alvin Panerio"
+                      target="_blank"
+                      style="color: #cccccc; text-decoration: none"
+                      >Alvin Panerio</a
+                    >
+                    ·
+                    <a
+                      href="https://soundcloud.com/alvin-panerio/pharaoh"
+                      title="Pharaoh"
+                      target="_blank"
+                      style="color: #cccccc; text-decoration: none"
+                      >Pharaoh</a
+                    >
+                  </div>
+                </div>
+                <div v-if="i.name === 'Summer Flute'">
+                  <iframe
+                    width="100%"
+                    height="166"
+                    scrolling="no"
+                    frameborder="no"
+                    allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1535065243&color=%23b21d1c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                  ></iframe>
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: #cccccc;
+                      line-break: anywhere;
+                      word-break: normal;
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                      font-family: Interstate, Lucida Grande,
+                        Lucida Sans Unicode, Lucida Sans, Garuda, Verdana,
+                        Tahoma, sans-serif;
+                      font-weight: 100;
+                    "
+                  >
+                    <a
+                      href="https://soundcloud.com/alvin-panerio"
+                      title="Alvin Panerio"
+                      target="_blank"
+                      style="color: #cccccc; text-decoration: none"
+                      >Alvin Panerio</a
+                    >
+                    ·
+                    <a
+                      href="https://soundcloud.com/alvin-panerio/summer-flute"
+                      title="Summer Flute"
+                      target="_blank"
+                      style="color: #cccccc; text-decoration: none"
+                      >Summer Flute</a
+                    >
+                  </div>
+                </div>
+              </div>
               <img
                 :src="i.img"
                 alt=""
                 class="2xl:h-[200px] h-[155px] projects-img-even transition-all duration-700"
               />
+              <div v-if="i.web" className="absolute bottom-5 left-5 text-2xl">
+                <div className="flex flex-col items-center gap-3 ">
+                  <a
+                    v-if="i.web.hasLink"
+                    className="text-white hover:text-[--gray] transition-all duration-300 cursor-pointer"
+                    :href="i.web.link"
+                    target="_blank"
+                  >
+                    <font-awesome-icon icon="link" />
+                  </a>
+                </div>
+              </div>
             </div>
           </li>
 
@@ -616,6 +915,184 @@ export default {
                 alt=""
                 class="2xl:h-[200px] h-[155px] projects-img-odd transition-all duration-700"
               />
+              <div v-if="i.web" className="absolute bottom-5 right-5 text-2xl">
+                <div className="flex flex-col items-center gap-3 ">
+                  <a
+                    v-if="i.web.hasLink"
+                    className="text-white hover:text-[--gray] transition-all duration-300 cursor-pointer"
+                    :href="i.web.link"
+                    target="_blank"
+                  >
+                    <font-awesome-icon icon="link" />
+                  </a>
+                </div>
+              </div>
+              <div v-if="i.soundcloud.hasLink">
+                <div v-if="i.name === 'Paul wit da 45'">
+                  <iframe
+                    width="100%"
+                    height="166"
+                    scrolling="no"
+                    frameborder="no"
+                    allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1335508303&color=%23b21d1c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                  ></iframe>
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: #cccccc;
+                      line-break: anywhere;
+                      word-break: normal;
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                      font-family: Interstate, Lucida Grande,
+                        Lucida Sans Unicode, Lucida Sans, Garuda, Verdana,
+                        Tahoma, sans-serif;
+                      font-weight: 100;
+                    "
+                  >
+                    <a
+                      href="https://soundcloud.com/alvin-panerio"
+                      title="Alvin Panerio"
+                      target="_blank"
+                      style="color: #cccccc; text-decoration: none"
+                      >Alvin Panerio</a
+                    >
+                    ·
+                    <a
+                      href="https://soundcloud.com/alvin-panerio/paul-wit-da-45"
+                      title="Paul Wit Da 45"
+                      target="_blank"
+                      style="color: #cccccc; text-decoration: none"
+                      >Paul Wit Da 45</a
+                    >
+                  </div>
+                </div>
+                <div v-if="i.name === 'Shiesty Drill'">
+                  <iframe
+                    width="100%"
+                    height="166"
+                    scrolling="no"
+                    frameborder="no"
+                    allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1335682783&color=%23b21d1c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                  ></iframe>
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: #cccccc;
+                      line-break: anywhere;
+                      word-break: normal;
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                      font-family: Interstate, Lucida Grande,
+                        Lucida Sans Unicode, Lucida Sans, Garuda, Verdana,
+                        Tahoma, sans-serif;
+                      font-weight: 100;
+                    "
+                  >
+                    <a
+                      href="https://soundcloud.com/alvin-panerio"
+                      title="Alvin Panerio"
+                      target="_blank"
+                      style="color: #cccccc; text-decoration: none"
+                      >Alvin Panerio</a
+                    >
+                    ·
+                    <a
+                      href="https://soundcloud.com/alvin-panerio/shiesty-drill"
+                      title="Shiesty Drill"
+                      target="_blank"
+                      style="color: #cccccc; text-decoration: none"
+                      >Shiesty Drill</a
+                    >
+                  </div>
+                </div>
+                <div v-if="i.name === 'Pharaoh'">
+                  <iframe
+                    width="100%"
+                    height="166"
+                    scrolling="no"
+                    frameborder="no"
+                    allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1335513730&color=%23b21d1c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                  ></iframe>
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: #cccccc;
+                      line-break: anywhere;
+                      word-break: normal;
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                      font-family: Interstate, Lucida Grande,
+                        Lucida Sans Unicode, Lucida Sans, Garuda, Verdana,
+                        Tahoma, sans-serif;
+                      font-weight: 100;
+                    "
+                  >
+                    <a
+                      href="https://soundcloud.com/alvin-panerio"
+                      title="Alvin Panerio"
+                      target="_blank"
+                      style="color: #cccccc; text-decoration: none"
+                      >Alvin Panerio</a
+                    >
+                    ·
+                    <a
+                      href="https://soundcloud.com/alvin-panerio/pharaoh"
+                      title="Pharaoh"
+                      target="_blank"
+                      style="color: #cccccc; text-decoration: none"
+                      >Pharaoh</a
+                    >
+                  </div>
+                </div>
+                <div v-if="i.name === 'Summer Flute'">
+                  <iframe
+                    width="100%"
+                    height="166"
+                    scrolling="no"
+                    frameborder="no"
+                    allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1535065243&color=%23b21d1c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                  ></iframe>
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: #cccccc;
+                      line-break: anywhere;
+                      word-break: normal;
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                      font-family: Interstate, Lucida Grande,
+                        Lucida Sans Unicode, Lucida Sans, Garuda, Verdana,
+                        Tahoma, sans-serif;
+                      font-weight: 100;
+                    "
+                  >
+                    <a
+                      href="https://soundcloud.com/alvin-panerio"
+                      title="Alvin Panerio"
+                      target="_blank"
+                      style="color: #cccccc; text-decoration: none"
+                      >Alvin Panerio</a
+                    >
+                    ·
+                    <a
+                      href="https://soundcloud.com/alvin-panerio/summer-flute"
+                      title="Summer Flute"
+                      target="_blank"
+                      style="color: #cccccc; text-decoration: none"
+                      >Summer Flute</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </li>
         </div>
