@@ -39,41 +39,100 @@ export default {
             id: 1,
             name: "Supreme Beats",
             img: sb,
+            web: {
+              hasLink: true,
+              link: "https://supremebeats.netlify.app",
+            },
+            github: {
+              hasLink: false,
+            },
           },
           {
             id: 2,
             name: "Luna Cosmetics",
             img: luna,
+            web: {
+              hasLink: true,
+              link: "http://lunacosmetics.me",
+            },
+            github: {
+              hasLink: false,
+            },
           },
           {
             id: 3,
             name: "Eye G",
             img: eg,
+            web: {
+              hasLink: true,
+              link: "http://dev-eyeg.pantheonsite.io",
+            },
+            github: {
+              hasLink: false,
+            },
           },
           {
             id: 4,
             name: "Listing App",
             img: lca,
+            web: {
+              hasLink: false,
+            },
+            github: {
+              hasLink: true,
+              link: "https://github.com/alvinpanerio/listing-crud-app",
+            },
           },
           {
             id: 5,
             name: "Work Your Way",
             img: wyw,
+            web: {
+              hasLink: true,
+              link: "https://workyourway.vercel.app",
+            },
+            github: {
+              hasLink: true,
+              link: "https://github.com/alvinpanerio/work-your-way",
+            },
           },
           {
             id: 6,
             name: "Suntukan Simulator",
             img: ss,
+            web: {
+              hasLink: true,
+              link: "https://drive.google.com/file/d/1fYMTAk1MaEVgtgoI1mUrMBu5dHgeaoL0/view",
+            },
+            github: {
+              hasLink: true,
+              link: "https://github.com/alvinpanerio/suntukan-simulator",
+            },
           },
           {
             id: 7,
             name: "Rebolusyonaryo TD",
             img: rtd,
+            web: {
+              hasLink: true,
+              link: "https://supremospace.itch.io/rebolusyonaryo-td",
+            },
+            github: {
+              hasLink: true,
+              link: "https://github.com/supremo-space/rebolusyonaryo-td",
+            },
           },
           {
             id: 8,
             name: "Codewars Challenges",
             img: "https://www.codewars.com/users/tyrooon/badges/large",
+            web: {
+              hasLink: true,
+              link: "https://www.codewars.com/users/tyrooon",
+            },
+            github: {
+              hasLink: false,
+            },
           },
         ],
         secondary: [
@@ -81,46 +140,109 @@ export default {
             id: 1,
             name: "Revolver",
             img: revolver,
+            web: {
+              hasLink: false,
+            },
+            artstation: {
+              hasLink: true,
+              link: "https://www.artstation.com/artwork/Ze5NXG",
+            },
           },
           {
             id: 2,
             name: "Donut",
             img: donut,
+            web: {
+              hasLink: false,
+            },
+            artstation: {
+              hasLink: true,
+              link: "https://www.artstation.com/artwork/mDx3qd",
+            },
           },
           {
             id: 3,
             name: "Tank",
             img: tank,
+            web: {
+              hasLink: true,
+              link: "https://freeimage.host/i/H4vu7gS",
+            },
+            artstation: {
+              hasLink: false,
+            },
           },
           {
             id: 4,
             name: "Tell 'em x Bawal Concert Poster",
             img: poster,
+            web: {
+              hasLink: true,
+              link: "https://freeimage.host/i/H4vu512",
+            },
+            artstation: {
+              hasLink: false,
+            },
           },
           {
             id: 5,
             name: "Paul wit da 45 Album Art",
             img: paulwitda45,
+            web: {
+              hasLink: true,
+              link: "https://freeimage.host/i/H4vuad7",
+            },
+            artstation: {
+              hasLink: false,
+            },
           },
           {
             id: 6,
             name: "Unplanned Album Art",
             img: unplanned,
+            web: {
+              hasLink: true,
+              link: "https://freeimage.host/i/H4vulee",
+            },
+            artstation: {
+              hasLink: false,
+            },
           },
           {
             id: 7,
             name: "Screamin' Album Art",
             img: screamin,
+            web: {
+              hasLink: true,
+              link: "https://freeimage.host/i/H4vuRql",
+            },
+            artstation: {
+              hasLink: false,
+            },
           },
           {
             id: 8,
             name: "Facebook (Criticism) Magazine",
             img: facebook,
+            web: {
+              hasLink: true,
+              link: "https://pdfhost.io/v/vN7MbG8JZ_facebookcrtiticism",
+            },
+            artstation: {
+              hasLink: false,
+            },
           },
           {
             id: 9,
             name: "Ukiyo Logo",
             img: ukiyo,
+            web: {
+              hasLink: true,
+              link: "https://freeimage.host/i/H4vuc79",
+            },
+            artstation: {
+              hasLink: false,
+            },
           },
         ],
       },
@@ -200,7 +322,7 @@ export default {
     >
       <div class="-mt-12 ml-10">
         <p class="2xl:text-xl text-lg font-akira 2xl:pb-8 pb-4 text-[--black]">
-          Aspiring Full-Stack Developer
+          Aspiring Full-Stack Developer <v-icon icon="fas fa-home" />
         </p>
         <p
           class="2xl:text-6xl text-4xl font-akira text-[--black] 2xl:pb-8 pb-4"
@@ -221,7 +343,9 @@ export default {
               class="2xl:w-6 w-4 2xl:h-6 h-4"
             ></unicon>
           </a>
-          <button
+          <a
+            href="https://pdfhost.io/v/n0DJ1TjBG_alvinpanerioresume"
+            target="_blank"
             class="2xl:text-base text-xs flex gap-3 mb-8 text-[--black] font-akira border border-4 border-[--black] p-2 hover:bg-[--black] hover:text-[--white] transition-all duration-300"
           >
             View Resume
@@ -231,7 +355,7 @@ export default {
               hover="white"
               class="2xl:w-6 w-4 2xl:h-6 h-4"
             ></unicon>
-          </button>
+          </a>
         </div>
         <!-- <p class="text-xs font-akira text-[--black] w-[400px]">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut aliquam
@@ -248,11 +372,11 @@ export default {
             <div class="w-3 h-3 bg-white rounded-full"></div>
             <div class="w-3 h-3 bg-white rounded-full"></div>
           </div>
-          <img
+          <!-- <img
             src="@/assets/pic.jpg"
             alt=""
             class="h-[500px] brightness-[.7]"
-          />
+          /> -->
         </div>
         <p class="text-[--white] font-akira" style="transform: rotate(90deg)">
           Lorem Ipsum
@@ -292,6 +416,29 @@ export default {
                 alt=""
                 class="2xl:h-[200px] h-[155px] projects-img-even transition-all duration-700"
               />
+              <div
+                v-if="i.github || i.web"
+                className="absolute bottom-5 left-5 text-2xl"
+              >
+                <div className="flex flex-col items-center gap-3 ">
+                  <a
+                    v-if="i.web.hasLink"
+                    className="text-white hover:text-[--gray] transition-all duration-300 cursor-pointer"
+                    :href="i.web.link"
+                    target="_blank"
+                  >
+                    <font-awesome-icon icon="link" />
+                  </a>
+                  <a
+                    v-if="i.github.hasLink"
+                    className="text-white hover:text-[--gray] transition-all duration-300 cursor-pointer"
+                    :href="i.github.link"
+                    target="_blank"
+                  >
+                    <font-awesome-icon :icon="['fab', 'github']" />
+                  </a>
+                </div>
+              </div>
             </div>
           </li>
 
@@ -309,6 +456,29 @@ export default {
                 alt=""
                 class="2xl:h-[200px] h-[155px] projects-img-odd transition-all duration-700"
               />
+              <div
+                v-if="i.github || i.web"
+                className="absolute bottom-5 right-5 text-2xl"
+              >
+                <div className="flex flex-col items-center gap-3 ">
+                  <a
+                    v-if="i.web.hasLink"
+                    className="text-white hover:text-[--gray] transition-all duration-300 cursor-pointer"
+                    :href="i.web.link"
+                    target="_blank"
+                  >
+                    <font-awesome-icon icon="link" />
+                  </a>
+                  <a
+                    v-if="i.github.hasLink"
+                    className="text-white hover:text-[--gray] transition-all duration-300 cursor-pointer"
+                    :href="i.github.link"
+                    target="_blank"
+                  >
+                    <font-awesome-icon :icon="['fab', 'github']" />
+                  </a>
+                </div>
+              </div>
             </div>
           </li>
         </div>
@@ -337,6 +507,30 @@ export default {
                 alt=""
                 class="2xl:h-[200px] h-[155px] projects-img-even transition-all duration-700"
               />
+
+              <div
+                v-if="i.artstation || i.web"
+                className="absolute bottom-5 left-5 text-2xl"
+              >
+                <div className="flex flex-col items-center gap-3 ">
+                  <a
+                    v-if="i.web.hasLink"
+                    className="text-white hover:text-[--gray] transition-all duration-300 cursor-pointer"
+                    :href="i.web.link"
+                    target="_blank"
+                  >
+                    <font-awesome-icon icon="link" />
+                  </a>
+                  <a
+                    v-if="i.artstation.hasLink"
+                    className="text-white hover:text-[--gray] transition-all duration-300 cursor-pointer"
+                    :href="i.artstation.link"
+                    target="_blank"
+                  >
+                    <font-awesome-icon :icon="['fab', 'artstation']" />
+                  </a>
+                </div>
+              </div>
             </div>
           </li>
 
@@ -354,6 +548,29 @@ export default {
                 alt=""
                 class="2xl:h-[200px] h-[155px] projects-img-odd transition-all duration-700"
               />
+              <div
+                v-if="i.artstation || i.web"
+                className="absolute bottom-5 right-5 text-2xl"
+              >
+                <div className="flex flex-col items-center gap-3 ">
+                  <a
+                    v-if="i.web.hasLink"
+                    className="text-white hover:text-[--gray] transition-all duration-300 cursor-pointer"
+                    :href="i.web.link"
+                    target="_blank"
+                  >
+                    <font-awesome-icon icon="link" />
+                  </a>
+                  <a
+                    v-if="i.artstation.hasLink"
+                    className="text-white hover:text-[--gray] transition-all duration-300 cursor-pointer"
+                    :href="i.artstation.link"
+                    target="_blank"
+                  >
+                    <font-awesome-icon :icon="['fab', 'artstation']" />
+                  </a>
+                </div>
+              </div>
             </div>
           </li>
         </div>

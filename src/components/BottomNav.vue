@@ -19,7 +19,7 @@ const handleScroll = () => {
 
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (screenWidth.value >= 1920 && screenWidth.value < 1366) {
+  if (screenWidth.value >= 1920 && screenWidth.value > 1366) {
     hasScrolled.value = scrollTop < 230;
     scrollWhite.value =
       (scrollTop > 230 && scrollTop < 5060) || scrollTop > 6300;
@@ -29,7 +29,6 @@ const handleScroll = () => {
     contactCircle.value = scrollTop > 6300;
     aboutCircle.value = scrollTop > 5060 && scrollTop < 6300;
   } else if (screenWidth.value >= 1366) {
-    console.log(scrollTop);
     hasScrolled.value = scrollTop < 230;
     scrollWhite.value =
       (scrollTop > 230 && scrollTop < 4170) || scrollTop > 5100;
