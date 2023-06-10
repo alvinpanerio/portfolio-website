@@ -496,11 +496,7 @@ export default {
             <div class="w-3 h-3 bg-white rounded-full"></div>
             <div class="w-3 h-3 bg-white rounded-full"></div>
           </div>
-          <img
-            src="@/assets/pic.jpg"
-            alt=""
-            class="h-[500px] brightness-[.7]"
-          />
+          <img src="@/assets/pic.png" alt="" class="2xl:h-[500px] h-[350px]" />
         </div>
       </div>
     </div>
